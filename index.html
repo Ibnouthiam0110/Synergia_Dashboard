@@ -56,7 +56,7 @@
   .auth-aside{background:radial-gradient(900px 500px at 30% -10%,#23508f,transparent),linear-gradient(160deg,#0f2546,#1B3A6B);color:#fff;padding:clamp(2rem,6vw,3.5rem);display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
   .auth-aside::after{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:46px 46px;mask:radial-gradient(600px 400px at 70% 30%,#000,transparent)}
   .auth-aside .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-size:clamp(1.2rem,3vw,1.4rem);position:relative;z-index:2}
-  .auth-aside .brand svg{width:clamp(28px,5vw,36px);height:clamp(28px,5vw,36px)}
+  .auth-aside .brand img{width:clamp(28px,5vw,36px);height:clamp(28px,5vw,36px);object-fit:contain}
   .auth-aside .pitch{position:relative;z-index:2}
   .auth-aside .pitch h2{font-family:var(--display);font-size:clamp(1.8rem,4vw,2.3rem);line-height:1.15;font-weight:500}
   .auth-aside .pitch p{color:#c4d2e8;margin-top:1rem;max-width:26rem;font-size:clamp(.85rem,1.5vw,.95rem)}
@@ -84,7 +84,7 @@
   /* Sidebar */
   .side{background:var(--ink);color:#aab9d3;display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
   .side .brand{display:flex;align-items:center;gap:.6rem;font-family:var(--display);font-size:clamp(1rem,2.5vw,1.25rem);color:#fff;padding:clamp(1rem,2vw,1.4rem);border-bottom:1px solid rgba(255,255,255,.08)}
-  .side .brand svg{width:clamp(28px,4vw,32px);height:clamp(28px,4vw,32px)}
+  .side .brand img{width:clamp(28px,4vw,32px);height:clamp(28px,4vw,32px);object-fit:contain}
   .nav-group{padding:clamp(.8rem,1.5vw,1rem) clamp(.6rem,1.2vw,.8rem);flex:1;overflow:auto}
   .nav-group .lab{font-size:clamp(.55rem,1vw,.66rem);letter-spacing:.16em;text-transform:uppercase;color:#5f6f8c;padding:clamp(.5rem,.8vw,.7rem) clamp(.5rem,.8vw,.7rem) clamp(.3rem,.6vw,.4rem)}
   .nav-item{display:flex;align-items:center;gap:clamp(.5rem,1vw,.75rem);padding:clamp(.5rem,.9vw,.65rem) clamp(.5rem,.9vw,.7rem);border-radius:9px;font-weight:500;cursor:pointer;transition:.2s;font-size:clamp(.8rem,1.5vw,.88rem);color:#aab9d3}
@@ -99,7 +99,8 @@
 
   /* Main */
   .main{display:flex;flex-direction:column;min-width:0}
-  .topbar{background:#fff;border-bottom:1px solid var(--line);padding:clamp(.7rem,1.5vw,.9rem) clamp(1.2rem,3vw,1.8rem);display:flex;align-items:center;gap:clamp(.6rem,1.2vw,1rem);position:sticky;top:0;z-index:20;flex-wrap:wrap}
+  .topbar{background:#fff;border-bottom:1px solid var(--line);padding:clamp(.6rem,1.2vw,.8rem) clamp(1rem,2vw,1.5rem);display:flex;align-items:center;gap:clamp(.5rem,1vw,.8rem);position:sticky;top:0;z-index:20;flex-wrap:nowrap;min-height:clamp(50px,10vw,60px);}
+  .topbar h1{font-family:var(--display);font-size:clamp(.95rem,2.2vw,1.2rem);color:var(--navy);font-weight:600;margin:0;white-space:nowrap;}
   .topbar h1{font-family:var(--display);font-size:clamp(1rem,2.5vw,1.3rem);color:var(--navy);font-weight:600}
   .topbar .crumb{font-size:clamp(.65rem,1.2vw,.78rem);color:var(--muted);display:none}
   @media(min-width:880px){.topbar .crumb{display:block}}
@@ -196,8 +197,8 @@
 <div class="auth" id="auth">
   <div class="auth-aside">
     <div class="brand">
-      <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="9" fill="#2E6DA4"/><path d="M12 27c0-5 3-7 8-7s8 2 8-3c0-3-2-5-6-5" stroke="#C9A84C" stroke-width="2.4" stroke-linecap="round"/><circle cx="28" cy="13" r="2.4" fill="#C9A84C"/></svg>
-      Synergia<span style="color:var(--gold)">.</span>SN
+      <img src="logo.jpeg" alt="Logo Synergia SN" style="width:clamp(28px,5vw,50px);height:clamp(28px,5vw,50px);object-fit:contain"
+      Synergia<span style="color:var(--gold)"></span>SYNERGIA.SN
     </div>
     <div class="pitch">
       <h2>Espace <em>associés</em>.<br>Le pilotage du cabinet.</h2>
@@ -243,8 +244,8 @@
   <!-- SIDEBAR -->
   <aside class="side" id="side">
     <div class="brand">
-      <svg viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="9" fill="#2E6DA4"/><path d="M12 27c0-5 3-7 8-7s8 2 8-3c0-3-2-5-6-5" stroke="#C9A84C" stroke-width="2.4" stroke-linecap="round"/><circle cx="28" cy="13" r="2.4" fill="#C9A84C"/></svg>
-      Synergia<span style="color:var(--gold)">.</span>SN
+      <img src="logo.jpeg" alt="Logo Synergia SN" style="width:clamp(28px,4vw,45px);height:clamp(28px,4vw,45px);object-fit:contain"
+      Synergia<span style="color:var(--gold)"></span>SYNERGIA.SN
     </div>
     <div class="nav-group">
       <div class="lab">Pilotage</div>
@@ -270,7 +271,7 @@
   <div class="main">
     <div class="topbar">
       <button class="icon-btn burger2" id="burger2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
-      <div style="flex:1"><h1 id="pageTitle">Tableau de bord</h1><div class="crumb">Synergia SN · Espace associés</div></div>
+      <div style="flex:1;display:flex;align-items:center;gap:.8rem"><img src="logo.jpeg" alt="Logo Synergia SN" style="width:clamp(32px,5vw,50px);height:clamp(32px,5vw,50px);flex-shrink:0;object-fit:contain"><div><h1 id="pageTitle">Tableau de bord</h1><div class="crumb">Synergia SN · Espace associés</div></div></div>
       <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="var(--muted)" stroke-width="2" width="16"><circle cx="11" cy="11" r="7"/><path d="m21 21-4-4"/></svg><input placeholder="Rechercher…"></div>
       <button class="icon-btn"><span class="ping"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="18"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></svg></button>
       <button class="btn btn-gold">+ Nouveau</button>
